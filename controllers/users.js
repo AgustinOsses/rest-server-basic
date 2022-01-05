@@ -61,7 +61,7 @@ const userDelete = async (req, res) => {
     const userDel = await User.findByIdAndUpdate(id, { state: false })
 
     res.json({
-        id
+        userDel, 
     })
 }
 
